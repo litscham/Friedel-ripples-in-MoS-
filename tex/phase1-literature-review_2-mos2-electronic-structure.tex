@@ -1,0 +1,55 @@
+\section{Literature Review: Electronic Structure and LDOS of MoS$_2$}
+
+\subsection{Introduction}
+Molybdenum disulfide (MoS$_2$) is a layered transition metal dichalcogenide (TMD) with unique electronic properties that have attracted significant attention in recent years. Its two-dimensional structure allows for tunable electronic behavior, making it relevant for applications in nanoelectronics, optoelectronics, and spintronics. This section reviews the crystal structure, band structure, local density of states (LDOS), and spin-orbit coupling effects of MoS$_2$, with a focus on both bulk (2H phase) and monolayer forms, and compares its properties to other TMD materials.
+
+\subsection{Crystal Structure and Symmetry}
+MoS$_2$ crystallizes in a hexagonal lattice in its 2H phase, characterized by the space group $P6_3/mmc$. Each monolayer consists of a plane of molybdenum atoms sandwiched between two planes of sulfur atoms, forming a trigonal prismatic coordination. Layers are held together by van der Waals forces, allowing for exfoliation into monolayers. Key structural parameters include lattice constants $a \approx 3.16$~\AA~and $c \approx 12.3$~\AA~\citep{splendiani2010emerging}.
+
+\subsection{Electronic Band Structure}
+Bulk MoS$_2$ exhibits an indirect bandgap of approximately 1.2~eV, while monolayer MoS$_2$ transitions to a direct bandgap of around 1.8--1.9~eV at the $K$ point of the Brillouin zone \citep{mak2010atomically}. Band structure calculations using density functional theory (DFT) confirm this transition and reveal the contributions of Mo $d$-orbitals and S $p$-orbitals to the conduction and valence bands. Figure~\ref{fig:mos2_bandstructure} illustrates a representative DFT band structure for monolayer MoS$_2$.
+
+\subsection{Local Density of States (LDOS)}
+The LDOS of MoS$_2$ provides spatially resolved information about electronic states. STM and theoretical simulations show that the LDOS is highest at the Mo sites for conduction band states and at S sites for valence band states \citep{zhou2013intrinsic}. LDOS maps also reveal edge and defect states that can modulate the local electronic properties.
+
+\subsection{Spin-Orbit Coupling Effects}
+Spin-orbit coupling (SOC) splits the valence band at the $K$ and $K'$ points by approximately 150~meV in monolayer MoS$_2$ \citep{liu2013three}. This splitting gives rise to spin-valley coupling, which is critical for valleytronics applications. SOC effects are weaker in the conduction band but still influence excitonic properties.
+
+\subsection{Comparison with Other TMD Materials}
+Compared to other TMDs like WS$_2$, MoSe$_2$, and WSe$_2$, MoS$_2$ has a smaller SOC-induced splitting but a similar transition from indirect to direct bandgap in the monolayer limit. Table~\ref{tab:tmd_comparison} summarizes key electronic properties of common TMD monolayers.
+
+\begin{table}[h!]
+\centering
+\caption{Comparison of bandgap and spin-orbit splitting in selected TMD monolayers}
+\begin{tabular}{lcc}
+\toprule
+Material & Bandgap (eV) & Valence Band SOC Splitting (meV) \\
+\midrule
+MoS$_2$ & 1.8--1.9 & 150 \\
+WS$_2$ & 2.0--2.1 & 420 \\
+MoSe$_2$ & 1.55--1.6 & 180 \\
+WSe$_2$ & 1.65--1.7 & 460 \\
+\bottomrule
+\end{tabular}
+\label{tab:tmd_comparison}
+\end{table}
+
+\subsection{Figures and Visualizations}
+\begin{figure}[h!]
+    \centering
+    % Replace with your actual band structure image or input file
+    \includegraphics[width=0.8\textwidth]{mos2_bandstructure.png}
+    \caption{Representative DFT-calculated band structure of monolayer MoS$_2$ showing the direct bandgap at the $K$ point.}
+    \label{fig:mos2_bandstructure}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    % Replace with your LDOS image or simulation output
+    \includegraphics[width=0.7\textwidth]{mos2_ldos.png}
+    \caption{Local density of states (LDOS) map for monolayer MoS$_2$, highlighting higher density at Mo sites for conduction band states and at S sites for valence band states.}
+    \label{fig:mos2_ldos}
+\end{figure}
+
+\bibliographystyle{plainnat}
+\bibliography{mos2_refs}

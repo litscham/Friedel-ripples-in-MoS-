@@ -1,0 +1,52 @@
+\section{Literature Review: Point Defects in 2D Materials (MoS$_2$ Focus)}
+
+\subsection{Introduction}
+Point defects play a crucial role in determining the electronic, optical, and catalytic properties of two-dimensional materials. In MoS$_2$, defects such as vacancies, antisites, and adatoms can significantly modify local electronic structure, induce mid-gap states, and influence carrier mobility. This section provides a comprehensive review of point defect types, their formation energies, defect-induced localization, and experimental characterization using advanced microscopy and spectroscopy techniques.
+
+\subsection{Classification of Point Defects}
+Point defects in MoS$_2$ can be categorized as follows:
+
+\begin{itemize}
+    \item \textbf{Vacancies:} Missing Mo or S atoms, e.g., sulfur monovacancies (V$_S$) and molybdenum vacancies (V$_{Mo}$) \citep{komsa2012two, qiu2013hopping}.
+    \item \textbf{Antisites:} Atoms occupying the wrong lattice site, such as Mo$_S$ or S$_{Mo}$ \citep{hong2015exploring}.
+    \item \textbf{Adatoms:} Foreign atoms or additional Mo/S atoms adsorbed on the surface \citep{zhou2013intrinsic}.
+\end{itemize}
+
+\subsection{Formation Energies and Thermodynamics}
+The stability of defects depends on formation energies, which can be computed via DFT. Sulfur vacancies typically have the lowest formation energy under S-poor conditions, whereas Mo vacancies are energetically less favorable. The chemical potential of the environment influences defect concentrations and thermodynamic equilibrium \citep{komsa2012two, qiu2013hopping}.
+
+\subsection{Defect-Induced State Localization}
+Point defects introduce localized electronic states within the bandgap. Sulfur vacancies generate deep donor-like states, affecting carrier recombination and transport. DFT calculations and STM measurements reveal the spatial extent of defect-induced LDOS perturbations \citep{zhou2013intrinsic, hong2015exploring}.
+
+\subsection{Experimental Imaging and Spectroscopy}
+Advanced characterization techniques provide direct observation of point defects:
+
+\begin{itemize}
+    \item \textbf{Scanning Transmission Electron Microscopy (STEM):} Atomic-resolution imaging to identify defect type and location \citep{lin2014atomic}.
+    \item \textbf{Electron Energy Loss Spectroscopy (EELS):} Measures local electronic structure changes near defects \citep{li2017direct}.
+    \item \textbf{Scanning Tunneling Microscopy (STM):} Maps defect-induced LDOS at the atomic scale \citep{zhou2013intrinsic}.
+\end{itemize}
+
+\subsection{Charge State Effects}
+Defects can exhibit multiple charge states, influencing electronic and optical behavior. For instance, sulfur vacancies can trap electrons, forming negatively charged centers, which can modify exciton binding energies and local potential landscapes \citep{komsa2012two, qiu2013hopping}.
+
+\subsection{Summary Table of Defects}
+\begin{table}[h!]
+\centering
+\caption{Classification and properties of common point defects in MoS$_2$}
+\begin{tabular}{lccc}
+\toprule
+Defect Type & Formation Energy (eV) & Charge State & Key Observations \\
+\midrule
+S Vacancy (V$_S$) & 1.5--2.0 & 0, -1 & Donor states, modifies LDOS \\
+Mo Vacancy (V$_{Mo}$) & 5.0--6.0 & 0, -2 & Deep acceptor states, less probable \\
+Mo$_S$ Antisite & 4.5--5.5 & 0 & Localized mid-gap states \\
+S$_{Mo}$ Antisite & 5.0--6.0 & 0 & Rare, high formation energy \\
+Adatoms & 0.8--3.0 & Variable & Surface modifications, catalytic activity \\
+\bottomrule
+\end{tabular}
+\label{tab:mos2_defects}
+\end{table}
+
+\bibliographystyle{plainnat}
+\bibliography{mos2_defects_refs}

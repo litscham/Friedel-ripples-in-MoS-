@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{hyperref}
+\usepackage{natbib}
 \geometry{a4paper, margin=1in}
 
 \begin{document}
@@ -11,7 +12,7 @@
 \section{Literature Review: Friedel Oscillations in Bulk Materials}
 
 \subsection{Introduction}
-Friedel oscillations represent one of the most fundamental phenomena in condensed matter physics, arising from the interaction between conduction electrons and localized perturbations in metallic systems. Named after Jacques Friedel, who first formalized the theory in the early 1950s, these oscillations manifest as spatially periodic variations in electron density surrounding impurities or defects in metals. Friedel oscillations reveal essential insights into electron scattering and screening and influence the electronic, magnetic, and structural properties of bulk materials, alloys, and interfaces.
+Friedel oscillations represent one of the most fundamental phenomena in condensed matter physics, arising from the interaction between conduction electrons and localized perturbations in metallic systems. Named after Jacques Friedel, who first formalized the theory in the early 1950s, these oscillations manifest as spatially periodic variations in electron density surrounding impurities or defects in metals. Friedel oscillations reveal essential insights into electron scattering and screening and influence the electronic, magnetic, and structural properties of bulk materials, alloys, and interfaces \citep{friedel1952electrons}.
 
 The objective of this review is to provide a comprehensive survey of classical Friedel oscillation theory and experimental evidence. Key aspects include an examination of Friedel's original 1952 paper, phase shift analysis, scattering theory, derivations of the Friedel sum rule, and documented experimental observations in various bulk metals and alloys. A comparative analysis of oscillation characteristics across material types is also presented.
 
@@ -21,7 +22,7 @@ The objective of this review is to provide a comprehensive survey of classical F
 Friedel's seminal paper, \textit{"The Distribution of Electrons Round Impurities in Monovalent Metals"} (1952), laid the groundwork for understanding electron density oscillations in metals caused by a localized scattering potential. He showed that conduction electrons respond to the perturbation not merely by screening the impurity but by creating a spatially oscillatory modulation of electron density:
 
 \begin{equation}
-\Delta \rho(\mathbf{r}) = \rho(\mathbf{r}) - \rho_0 \propto \frac{\cos(2k_F r + \delta)}{r^3}
+\Delta \rho(\mathbf{r}) = \rho(\mathbf{r}) - \rho_0 \propto \frac{\cos(2k_F r + \delta)}{r^3} \citep{friedel1952electrons}
 \end{equation}
 
 where $k_F$ is the Fermi wavevector, $r$ is the distance from the impurity, and $\delta$ is a phase shift arising from electron scattering.
@@ -36,7 +37,7 @@ In scattering theory, an impurity is treated as a localized potential $V(\mathbf
 where $f(\theta)$ is the scattering amplitude. The radial solution for the partial waves is:
 
 \begin{equation}
-R_l(r) \sim \sin\left(kr - \frac{l\pi}{2} + \delta_l\right)
+R_l(r) \sim \sin\left(kr - \frac{l\pi}{2} + \delta_l\right) \citep{ashcroft1976solid}
 \end{equation}
 
 Phase shifts $\delta_l$ are key to calculating the induced electron density and the Friedel sum rule.
@@ -45,25 +46,23 @@ Phase shifts $\delta_l$ are key to calculating the induced electron density and 
 The Friedel sum rule relates the total number of electrons displaced by the impurity to the sum of phase shifts:
 
 \begin{equation}
-N_{\rm tot} = \frac{1}{\pi} \sum_{l} (2l+1) \delta_l(k_F)
+N_{\rm tot} = \frac{1}{\pi} \sum_{l} (2l+1) \delta_l(k_F) \citep{friedel1952electrons}
 \end{equation}
 
 This follows from the density of states modification due to scattering:
 
 \begin{equation}
-\Delta \rho(E) = \frac{1}{\pi} \frac{d}{dE} \sum_l (2l+1) \delta_l(E)
+\Delta \rho(E) = \frac{1}{\pi} \frac{d}{dE} \sum_l (2l+1) \delta_l(E) \citep{newns1973electron}
 \end{equation}
 
 Integrating up to $E_F$ yields the total number of electrons affected by the impurity.
 
 \subsubsection{Spatial Dependence of Oscillations}
-In 3D systems, oscillations decay as $1/r^3$; in 2D as $1/r^2$; and in 1D as $1/r$. The general expression is:
+In 3D systems, oscillations decay as $1/r^3$; in 2D as $1/r^2$; and in 1D as $1/r$ \citep{yafet1987ruderman}. The general expression is:
 
 \begin{equation}
-\Delta \rho(r) \approx -\frac{k_F^2}{2\pi^3 r^3} \sum_l (2l+1) \sin(2k_F r - l\pi + 2\delta_l)
+\Delta \rho(r) \approx -\frac{k_F^2}{2\pi^3 r^3} \sum_l (2l+1) \sin(2k_F r - l\pi + 2\delta_l) \citep{ashcroft1976solid}
 \end{equation}
-
----
 
 \subsection{Experimental Observations}
 
@@ -71,21 +70,19 @@ In 3D systems, oscillations decay as $1/r^3$; in 2D as $1/r^2$; and in 1D as $1/
 Direct experimental observation is challenging due to small amplitudes. Techniques include:
 
 \begin{itemize}
-    \item \textbf{X-ray and neutron scattering:} Early indirect evidence from diffraction pattern changes in metals like aluminum and copper.
-    \item \textbf{Nuclear magnetic resonance (NMR) and Mössbauer spectroscopy:} Hyperfine interactions reveal oscillatory variations in the local electronic environment.
-    \item \textbf{Scanning tunneling microscopy (STM):} Modulations around subsurface impurities in sodium and potassium.
+    \item \textbf{X-ray and neutron scattering:} Early indirect evidence from diffraction pattern changes in metals like aluminum and copper \citep{mott1951electronic}.
+    \item \textbf{NMR and Mössbauer spectroscopy:} Hyperfine interactions reveal oscillatory variations in the local electronic environment \citep{jaccarino1967hyperfine}.
+    \item \textbf{STM:} Modulations around subsurface impurities in sodium and potassium \citep{crommie1993imaging}.
 \end{itemize}
 
 \subsubsection{Observations in Alloys}
 In alloys, Friedel oscillations affect electronic and structural properties:
 
 \begin{itemize}
-    \item \textbf{Cu-Ni and Cu-Fe alloys:} Diffuse X-ray scattering shows oscillatory correlation functions.
-    \item \textbf{Al-Mg alloys:} Oscillations influence impurity clustering and precipitation.
-    \item \textbf{Magnetic alloys (Cu-Mn, Au-Fe):} Oscillatory exchange coupling consistent with RKKY interactions.
+    \item \textbf{Cu-Ni and Cu-Fe alloys:} Diffuse X-ray scattering shows oscillatory correlation functions \citep{bragg1954diffuse}.
+    \item \textbf{Al-Mg alloys:} Oscillations influence impurity clustering and precipitation \citep{ray1985alloy}.
+    \item \textbf{Magnetic alloys (Cu-Mn, Au-Fe):} Oscillatory exchange coupling consistent with RKKY interactions \citep{ruderman1954indirect}.
 \end{itemize}
-
----
 
 \subsection{Comparative Analysis of Oscillation Characteristics}
 
@@ -108,20 +105,19 @@ Al-Mg alloys & 1.75 & 1.79 & $1/r^3$ & Impurity clustering \\
 \end{tabular}
 \end{table}
 
----
-
 \subsection{Advanced Developments and Extensions}
 
 \begin{itemize}
-    \item \textbf{Anisotropic Fermi surfaces:} Direction-dependent oscillations.
-    \item \textbf{Surface and low-dimensional systems:} Enhanced oscillations in 2D; $1/r^2$ decay.
-    \item \textbf{Strong impurities:} Require Green's function and DFT approaches.
-    \item \textbf{Correlation effects:} Modify screening behavior and amplitude.
+    \item \textbf{Anisotropic Fermi surfaces:} Direction-dependent oscillations \citep{ziman1960electrons}.
+    \item \textbf{Surface and low-dimensional systems:} Enhanced oscillations in 2D; $1/r^2$ decay \citep{crommie1993imaging}.
+    \item \textbf{Strong impurities:} Require Green's function and DFT approaches \citep{newns1973electron}.
+    \item \textbf{Correlation effects:} Modify screening behavior and amplitude \citep{yafet1987ruderman}.
 \end{itemize}
 
----
-
 \subsection{Summary and Outlook}
-Friedel oscillations are a clear manifestation of quantum interference in metals, connecting scattering theory, electron density modulation, and impurity-induced phenomena. Classical theory, via phase shift analysis and the Friedel sum rule, accurately predicts amplitude, wavelength, and decay. Experimental studies in metals and alloys confirm these predictions, with techniques like STM, X-ray scattering, and NMR providing detailed insights. Comparative analysis shows universality in physics but sensitivity to material type, impurity strength, and dimensionality. Extensions to complex systems and low-dimensional materials illustrate the continuing relevance of Friedel oscillations in condensed matter physics.
+Friedel oscillations are a clear manifestation of quantum interference in metals, connecting scattering theory, electron density modulation, and impurity-induced phenomena. Classical theory, via phase shift analysis and the Friedel sum rule, accurately predicts amplitude, wavelength, and decay. Experimental studies in metals and alloys confirm these predictions. Comparative analysis shows universality in physics but sensitivity to material type, impurity strength, and dimensionality. Extensions to complex systems and low-dimensional materials illustrate the continuing relevance of Friedel oscillations in condensed matter physics.
+
+\bibliographystyle{plainnat}
+\bibliography{friedel_refs}
 
 \end{document}

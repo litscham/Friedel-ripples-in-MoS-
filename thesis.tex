@@ -1,0 +1,401 @@
+\documentclass[12pt,a4paper,oneside]{book}
+
+%=== PACKAGES ===
+\usepackage[utf-8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{tocloft}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{tocbibind}
+\usepackage{appendix}
+
+%=== FORMATTING ===
+\onehalfspacing
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%=== TITLE AND AUTHOR ===
+\title{Friedel Ripples in \ce{MoS2}:\\A Demonstration of Friedel Oscillations\\around Single-Atom Defects in a 2D Material}
+\author{Author Name}
+\date{\today}
+
+%=================================
+\begin{document}
+
+%=== TITLE PAGE ===
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Large \textbf{PhD Thesis}}
+    \vspace{1cm}
+    
+    {\huge \textbf{Friedel Ripples in \ce{MoS2}}}
+    \vspace{0.5cm}
+    
+    {\large \textbf{A Demonstration of Friedel Oscillations around Single-Atom Defects in a 2D Material}}
+    \vspace{3cm}
+    
+    {\large Author Name}
+    \vspace{1cm}
+    
+    {\large Department of Physics/Materials Science}
+    \vspace{0.5cm}
+    
+    {\large University Name}
+    \vspace{2cm}
+    
+    {\large \today}
+    \vspace{2cm}
+    
+    {\large Supervisors:\\Prof. Supervisor One\\Prof. Supervisor Two}
+    
+\end{titlepage}
+
+%=== DECLARATION ===
+\chapter*{Declaration}
+I hereby declare that this thesis is a result of my own work and that all sources have been appropriately acknowledged. This work has not been submitted in this form to any other institution.
+
+\vspace{2cm}
+\noindent Date: \underline{\hspace{5cm}}
+
+\noindent Signature: \underline{\hspace{5cm}}
+
+%=== ABSTRACT ===
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+This dissertation presents a comprehensive investigation of Friedel oscillations around single-atom defects in two-dimensional molybdenum disulfide (\ce{MoS2}). Through a combination of theoretical calculations and computational simulations, we demonstrate the emergence of Friedel ripple patterns in the electronic density of states surrounding isolated defects. This work bridges fundamental concepts from condensed matter physics with modern nanomaterial characterization, providing insights into defect physics in two-dimensional semiconductors.
+
+%=== ACKNOWLEDGMENTS ===
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+I would like to express my sincere gratitude to my supervisors for their invaluable guidance and support throughout this research project. I am grateful to my colleagues and friends who provided helpful discussions and encouragement. I also acknowledge the computational resources provided by [Institution/Computing Center].
+
+%=== TABLE OF CONTENTS ===
+\tableofcontents
+\listoffigures
+\listoftables
+
+%=================================
+\chapter{Introduction}
+\label{chap:introduction}
+
+\section{Motivation and Context}
+\label{sec:intro_motivation}
+
+The study of electronic phenomena around defects in materials lies at the heart of condensed matter physics and materials science. Defects—whether vacancies, impurities, or structural irregularities—fundamentally alter the local electronic structure and can dramatically affect material properties. Understanding these local electronic signatures is crucial for predicting and engineering the behavior of modern nanomaterials and nanodevices.
+
+Among the most fascinating manifestations of defect-induced electronic phenomena are \textit{Friedel oscillations}: characteristic spatial oscillations in the electron density that develop around a scattering center in a conductor or semiconductor. These oscillations, first predicted by Jacques Friedel in the 1950s, represent a fundamental quantum mechanical response of a free electron gas to a localized perturbation. Despite being theoretically well-established in bulk systems for decades, the manifestation of Friedel oscillations in two-dimensional (2D) materials—where quantum confinement effects and the reduced dimensionality fundamentally alter electron dynamics—remains an active area of research.
+
+\section{Friedel Oscillations: Theoretical Background}
+\label{sec:intro_friedel}
+
+Friedel oscillations arise from the collective response of mobile electrons to a localized potential. When electrons scatter off a defect or impurity, their wavefunctions are phase-shifted according to the scattering cross-section. The superposition of scattered electron wavefunctions creates a characteristic ripple pattern in the electronic density of states around the scattering center. The wavelength of these oscillations is determined by the Fermi wavelength ($\lambda_F = 2\pi/k_F$), while the amplitude depends on the strength of the scattering potential and the electronic structure.
+
+In two dimensions, these oscillations become even more pronounced due to the reduced electron density of states and the geometric confinement of the electron system. The 2D geometry fundamentally changes the spatial profile of the oscillations compared to their 3D counterparts, potentially creating distinct signatures that could be experimentally distinguishable.
+
+\section{Two-Dimensional Materials and \ce{MoS2}}
+\label{sec:intro_mos2}
+
+The discovery and synthesis of atomically thin two-dimensional (2D) materials over the past two decades have opened entirely new horizons in materials science. Graphene, transition metal dichalcogenides (TMDs), and other 2D materials exhibit unique properties that are absent in their bulk counterparts, offering unprecedented opportunities for fundamental science and technological applications.
+
+Molybdenum disulfide (\ce{MoS2}) has emerged as one of the most studied TMD materials due to its favorable properties: a tunable direct bandgap ($\approx 1.8$ eV in monolayers), strong spin-orbit coupling, and excellent stability. As a 2D semiconductor with a moderate bandgap, \ce{MoS2} is particularly promising for optoelectronic devices, sensors, and catalytic applications. The ability to isolate single atomic layers has made \ce{MoS2} an ideal platform for studying how quantum confinement and reduced dimensionality affect fundamental electronic phenomena.
+
+\section{Single-Atom Defects in 2D Semiconductors}
+\label{sec:intro_defects}
+
+Defects are inevitable in any real material. In two-dimensional materials, single-atom vacancies and other point defects have profound effects precisely because the material is so thin—a single missing atom can significantly perturb the electronic properties. These defects can arise during material synthesis, from exposure to electron beams or other radiation, or through controlled engineering.
+
+Understanding how single-atom defects locally modify the electronic structure is essential for multiple reasons: (1) it allows us to quantify the impact of unavoidable fabrication imperfections, (2) it enables defect-based engineering strategies to tailor material properties, and (3) it provides insights into defect detection and characterization using advanced analytical techniques such as scanning transmission electron microscopy with electron energy loss spectroscopy (STEM-EELS).
+
+\section{Objectives and Scope of This Work}
+\label{sec:intro_objectives}
+
+This thesis investigates the Friedel oscillations around single-atom defects in monolayer \ce{MoS2} through an integrated computational approach. Our primary objectives are:
+
+\begin{enumerate}
+    \item To demonstrate theoretically the emergence of Friedel ripple patterns around isolated point defects (\ce{Mo} vacancies, \ce{S} vacancies, and antisite defects) in \ce{MoS2}.
+    \item To characterize the wavelength, amplitude, and energy dependence of these oscillations and relate them to the underlying band structure.
+    \item To explore defect-specific signatures in the local density of states (LDOS) that could be experimentally accessible via STEM-EELS measurements.
+    \item To compare the observed patterns with theoretical predictions from quantum scattering theory.
+    \item To provide insights into how 2D confinement and material-specific properties modify Friedel oscillations compared to bulk systems.
+\end{enumerate}
+
+\section{Thesis Organization}
+\label{sec:intro_organization}
+
+The thesis is structured as follows. Chapter~\ref{chap:literature} provides a comprehensive literature review covering the theoretical foundations of Friedel oscillations, the electronic structure of \ce{MoS2}, and the current state of defect physics in 2D materials. Chapter~\ref{chap:theory} develops the theoretical framework used to interpret our results, including Green's function formalism and effective potential approaches. Chapter~\ref{chap:methods} details our computational methodology, focusing on density functional theory (DFT) calculations and local density of states computations. Chapter~\ref{chap:results} presents the main findings, including detailed maps of Friedel oscillations around various defect types. Chapter~\ref{chap:discussion} interprets these results in the context of quantum scattering theory and experimental considerations. Finally, Chapter~\ref{chap:conclusion} summarizes our contributions and discusses future research directions.
+
+%=================================
+\chapter{Literature Review}
+\label{chap:literature}
+
+\section{Friedel Oscillations in Bulk Materials}
+\label{sec:lit_bulk_friedel}
+
+\section{Electronic Structure of \ce{MoS2}}
+\label{sec:lit_mos2_structure}
+
+\subsection{Crystal Structure and Symmetry}
+\label{subsec:lit_crystal_structure}
+
+\subsection{Band Structure and Electronic Properties}
+\label{subsec:lit_band_structure}
+
+\section{Defects in Two-Dimensional Materials}
+\label{sec:lit_2d_defects}
+
+\subsection{Types of Point Defects}
+\label{subsec:lit_defect_types}
+
+\subsection{Defect Formation and Stability}
+\label{subsec:lit_defect_stability}
+
+\section{Scanning Transmission Electron Microscopy and Spectroscopy}
+\label{sec:lit_stem}
+
+\section{Previous Studies of Friedel Oscillations in 2D Materials}
+\label{sec:lit_friedel_2d}
+
+\section{Knowledge Gaps and Research Questions}
+\label{sec:lit_gaps}
+
+%=================================
+\chapter{Theoretical Framework}
+\label{chap:theory}
+
+\section{Quantum Scattering and Friedel Sum Rule}
+\label{sec:theory_friedel_sum}
+
+\section{Density of States in Two-Dimensional Systems}
+\label{sec:theory_dos}
+
+\section{Perturbation Theory for Defect Scattering}
+\label{sec:theory_perturbation}
+
+\section{Green's Function Formalism}
+\label{sec:theory_greens}
+
+\section{Effective Potential Models for Point Defects}
+\label{sec:theory_effective_potential}
+
+\section{Electron-Defect Interactions in \ce{MoS2}}
+\label{sec:theory_interactions}
+
+\subsection{Coulomb Interactions}
+\label{subsec:theory_coulomb}
+
+\subsection{Orbital Hybridization Effects}
+\label{subsec:theory_hybridization}
+
+\section{Fourier Analysis of Spatial Oscillations}
+\label{sec:theory_fourier}
+
+%=================================
+\chapter{Computational Methods}
+\label{chap:methods}
+
+\section{Density Functional Theory (DFT) Calculations}
+\label{sec:methods_dft}
+
+\subsection{Exchange-Correlation Functionals}
+\label{subsec:methods_xc_functionals}
+
+\subsection{Basis Sets and Pseudopotentials}
+\label{subsec:methods_basis}
+
+\section{System Setup and Supercell Construction}
+\label{sec:methods_supercell}
+
+\section{Defect Geometry Optimization}
+\label{sec:methods_optimization}
+
+\section{Electronic Structure Calculations}
+\label{sec:methods_electronic_structure}
+
+\subsection{Band Structure Calculations}
+\label{subsec:methods_band_structure}
+
+\subsection{Local Density of States (LDOS) Calculations}
+\label{subsec:methods_ldos}
+
+\section{Mapping Friedel Oscillations}
+\label{sec:methods_mapping}
+
+\section{STEM-EELS Image Simulation and Analysis}
+\label{sec:methods_stem_simulation}
+
+\subsection{STEM Imaging Simulation}
+\label{subsec:methods_stem_imaging}
+
+\subsection{EELS Spectroscopy Simulation}
+\label{subsec:methods_eels_spectroscopy}
+
+\section{Computational Parameters and Convergence}
+\label{sec:methods_convergence}
+
+\section{Data Analysis and Visualization}
+\label{sec:methods_analysis}
+
+%=================================
+\chapter{Results}
+\label{chap:results}
+
+\section{Defect-Free \ce{MoS2} Reference System}
+\label{sec:results_pristine}
+
+\subsection{Crystal Geometry}
+\label{subsec:results_geometry}
+
+\subsection{Electronic Band Structure}
+\label{subsec:results_ref_band}
+
+\subsection{Density of States}
+\label{subsec:results_ref_dos}
+
+\section{Single-Atom Defects: Structural Properties}
+\label{sec:results_defect_structure}
+
+\subsection{Mo Vacancy}
+\label{subsec:results_mo_vacancy}
+
+\subsection{S Vacancy}
+\label{subsec:results_s_vacancy}
+
+\subsection{Mo-S Antisite Defects}
+\label{subsec:results_antisites}
+
+\section{Friedel Oscillations: Spatial Mapping}
+\label{sec:results_friedel_maps}
+
+\subsection{LDOS Maps around Mo Defects}
+\label{subsec:results_mo_ldos}
+
+\subsection{LDOS Maps around S Defects}
+\label{subsec:results_s_ldos}
+
+\subsection{Wavelength and Amplitude Analysis}
+\label{subsec:results_wavelength}
+
+\section{Energy-Dependent Friedel Ripples}
+\label{sec:results_energy_dependence}
+
+\section{Comparison with STEM-EELS Simulations}
+\label{sec:results_stem_comparison}
+
+\section{Dependence on Defect Type and Charge State}
+\label{sec:results_defect_dependence}
+
+%=================================
+\chapter{Discussion}
+\label{chap:discussion}
+
+\section{Characteristics of Friedel Oscillations in \ce{MoS2}}
+\label{sec:disc_characteristics}
+
+\section{Comparison with Theoretical Predictions}
+\label{sec:disc_theory_comparison}
+
+\section{Influence of Band Structure on Oscillation Patterns}
+\label{sec:disc_band_structure_influence}
+
+\section{Defect-Specific Signatures}
+\label{sec:disc_defect_signatures}
+
+\section{Implications for Experimental Observation}
+\label{sec:disc_experimental_implications}
+
+\subsection{STEM-EELS Signatures}
+\label{subsec:disc_stem_signatures}
+
+\subsection{STEM-EELS Measurement Capabilities}
+\label{subsec:disc_stem_measurements}
+
+\section{Comparison with Other Two-Dimensional Materials}
+\label{sec:disc_2d_comparison}
+
+\section{Limitations and Uncertainties}
+\label{sec:disc_limitations}
+
+%=================================
+\chapter{Conclusion}
+\label{chap:conclusion}
+
+\section{Summary of Main Findings}
+\label{sec:conc_summary}
+
+\section{Scientific Contributions}
+\label{sec:conc_contributions}
+
+\section{Broader Implications for 2D Material Physics}
+\label{sec:conc_implications}
+
+\section{Future Directions and Outlook}
+\label{sec:conc_future}
+
+\subsection{Extensions of Current Work}
+\label{subsec:conc_extensions}
+
+\subsection{Experimental Validation}
+\label{subsec:conc_experimental}
+
+\subsection{Applications and Device Implications}
+\label{subsec:conc_applications}
+
+%=================================
+\appendix
+
+\chapter{Computational Details}
+\label{app:computational_details}
+
+\section{Input Parameters for DFT Calculations}
+\label{sec:app_dft_params}
+
+\section{Convergence Tests}
+\label{sec:app_convergence}
+
+\chapter{Supplementary Figures and Data}
+\label{app:supplementary}
+
+\section{Additional LDOS Maps}
+\label{sec:app_ldos_maps}
+
+\section{Band Structure Plots}
+\label{sec:app_band_structures}
+
+\section{Raw Data Sets}
+\label{sec:app_raw_data}
+
+\chapter{Code and Algorithms}
+\label{app:code}
+
+\section{Python Scripts for Data Processing}
+\label{sec:app_python_scripts}
+
+\section{MATLAB Routines for Analysis}
+\label{sec:app_matlab_routines}
+
+%=================================
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+%=================================
+\end{document}

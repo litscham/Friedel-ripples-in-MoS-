@@ -1,7 +1,7 @@
-# Appendix: Supplementary Computational Data
+# Appendix: Supplementary DFT and STEM-EELS Simulation Data
 
 ## Objective
-Organize and document additional computational results
+Organize and document additional computational results and simulated spectra
 
 ## Tasks
 - Prepare additional LDOS maps for appendix

@@ -1,7 +1,7 @@
-# Theoretical Framework: Quantum Scattering Theory
+# Theory: Quantum Scattering and Friedel Sum Rule
 
 ## Objective
-Develop mathematical framework for electron-defect scattering
+Develop mathematical framework for electron-defect scattering from first principles
 
 ## Tasks
 - Derive Friedel sum rule from first principles

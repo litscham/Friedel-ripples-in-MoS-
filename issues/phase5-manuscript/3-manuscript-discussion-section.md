@@ -1,7 +1,7 @@
-# Manuscript: Discussion Section
+# Manuscript: Discussion Section (Theory vs Simulation, STEM-EELS Implications)
 
 ## Objective
-Interpret findings and place in broader context
+Interpret findings and place in context of scattering theory and STEM-EELS feasibility
 
 ## Tasks
 - Interpret Friedel oscillation characteristics

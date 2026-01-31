@@ -1,7 +1,7 @@
-# Analysis: Energy Dependence Study
+# Analysis: Energy-Dependent EELS Signatures of Friedel Oscillations
 
 ## Objective
-Investigate Friedel oscillations as function of energy
+Investigate Friedel oscillations as function of energy for EELS spectroscopic analysis
 
 ## Tasks
 - Calculate LDOS at multiple energy slices

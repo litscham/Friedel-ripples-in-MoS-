@@ -1,7 +1,7 @@
-# Computational: S Vacancy Defects
+# Computational: S Vacancy Defects (LDOS and Comparison)
 
 ## Objective
-Complete DFT study of S vacancies
+Complete DFT study of S vacancies with comparative LDOS analysis for STEM-EELS application
 
 ## Tasks
 - Create supercells with S vacancies (single and double)

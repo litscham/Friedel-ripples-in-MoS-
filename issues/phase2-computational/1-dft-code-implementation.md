@@ -1,7 +1,7 @@
-# Computational Setup: DFT Code Implementation
+# Computational Setup: DFT Implementation (VASP/QE Configuration)
 
 ## Objective
-Establish and validate DFT computational workflow
+Establish and validate DFT computational workflow for high-precision LDOS calculations
 
 ## Tasks
 - Install and configure VASP or Quantum ESPRESSO

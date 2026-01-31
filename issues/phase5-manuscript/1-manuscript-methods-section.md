@@ -1,7 +1,7 @@
-# Manuscript: Methods Section
+# Manuscript: Methods Section (DFT and STEM-EELS Simulation)
 
 ## Objective
-Write comprehensive computational and experimental methods section
+Write comprehensive computational and STEM-EELS simulation methods section
 
 ## Tasks
 - Document DFT parameters and convergence tests

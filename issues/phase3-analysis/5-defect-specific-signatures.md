@@ -1,7 +1,7 @@
-# Analysis: Defect-Specific Signatures
+# Analysis: Defect-Specific STEM-EELS Signatures and Fingerprints
 
 ## Objective
-Identify unique electronic signatures for defect identification
+Identify unique electronic signatures for experimental defect identification via STEM-EELS
 
 ## Tasks
 - Compare LDOS patterns across defect types

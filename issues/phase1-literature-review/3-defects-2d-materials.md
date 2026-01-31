@@ -1,7 +1,7 @@
-# Literature Review: Defects in 2D Materials
+# Literature Review: Point Defects in 2D Materials (MoS₂ Focus)
 
 ## Objective
-Comprehensive review of point defects and their characterization
+Comprehensive review of point defects and their STEM-EELS characterization
 
 ## Tasks
 - Classify defect types: vacancies, antisites, adatoms

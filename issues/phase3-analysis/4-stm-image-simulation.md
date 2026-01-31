@@ -1,4 +1,4 @@
-# Analysis: STEM-EELS Simulation
+# Analysis: STEM-EELS Simulation and Mapping
 
 ## Objective
 Generate simulated STEM-EELS spectra and maps from computed LDOS

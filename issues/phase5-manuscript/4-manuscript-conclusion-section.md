@@ -1,7 +1,7 @@
-# Manuscript: Conclusion and Outlook
+# Manuscript: Conclusion and Outlook (STEM-EELS Experimental Validation)
 
 ## Objective
-Summarize contributions and future directions
+Summarize contributions and propose STEM-EELS experimental validation approaches
 
 ## Tasks
 - Summarize key scientific findings

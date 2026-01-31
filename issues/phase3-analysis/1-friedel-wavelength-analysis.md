@@ -1,7 +1,7 @@
-# Analysis: Friedel Oscillation Wavelength
+# Analysis: Friedel Oscillation Wavelength (STEM-EELS Signatures)
 
 ## Objective
-Extract and characterize wavelengths of Friedel ripples
+Extract and characterize wavelengths of Friedel ripples for STEM-EELS experimental detection
 
 ## Tasks
 - Write Python scripts for LDOS Fourier analysis

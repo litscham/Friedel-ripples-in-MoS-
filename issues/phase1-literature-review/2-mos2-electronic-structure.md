@@ -1,7 +1,7 @@
-# Literature Review: Electronic Structure of MoS₂
+# Literature Review: Electronic Structure and LDOS of MoS₂
 
 ## Objective
-Deep dive into MoS₂ crystal structure, band structure, and electronic properties
+Deep dive into MoS₂ crystal structure, band structure, and local density of states
 
 ## Tasks
 - Document MoS₂ crystal structure and symmetry (2H phase)

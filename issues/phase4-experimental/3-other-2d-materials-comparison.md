@@ -1,7 +1,7 @@
-# Comparison Study: Other 2D Materials
+# Comparison Study: Friedel Oscillations in Other 2D Materials (STEM-EELS Perspective)
 
 ## Objective
-Compare with Friedel oscillations in graphene, WS₂, etc.
+Compare with Friedel oscillations in graphene, WS₂, and other TMDs, assessing STEM-EELS characterization potential
 
 ## Tasks
 - Collect data on other 2D TMDs if available

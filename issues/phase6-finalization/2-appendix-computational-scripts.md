@@ -1,7 +1,7 @@
-# Appendix: Computational Scripts
+# Appendix: Computational Scripts and STEM-EELS Simulators
 
 ## Objective
-Document and archive analysis and visualization code
+Document and archive DFT processing and STEM-EELS simulation code with reproducibility documentation
 
 ## Tasks
 - Clean up Python scripts for LDOS processing

@@ -1,7 +1,7 @@
-# Manuscript: Results Section
+# Manuscript: Results Section (DFT-Computed LDOS and STEM-EELS Simulations)
 
 ## Objective
-Present research findings clearly and comprehensively
+Present DFT and STEM-EELS simulation findings clearly and comprehensively
 
 ## Tasks
 - Organize results logically (pristine → defects → analysis)

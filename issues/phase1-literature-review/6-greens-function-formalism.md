@@ -1,7 +1,7 @@
-# Theoretical Framework: Green's Function Formalism
+# Theory: Green's Functions and LDOS Calculation
 
 ## Objective
-Master Green's function approach for defect scattering in 2D
+Master Green's function approach for computing LDOS in 2D defect systems
 
 ## Tasks
 - Study free electron Green's function

@@ -1,7 +1,7 @@
-# Computational: Antisite Defects
+# Computational: Antisite Defects (LDOS Characterization)
 
 ## Objective
-Study Mo-S and S-Mo antisite defects
+Study Mo-S and S-Mo antisite defects with detailed LDOS characterization for STEM-EELS signatures
 
 ## Tasks
 - Create supercells with antisite substitutions

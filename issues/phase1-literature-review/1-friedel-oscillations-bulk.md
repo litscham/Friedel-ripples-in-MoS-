@@ -1,7 +1,7 @@
-# Literature Review: Friedel Oscillations in Bulk Materials
+# Literature Review: Friedel Oscillations Theory and Experiments in Bulk
 
 ## Objective
-Comprehensive literature review on classical Friedel oscillations theory and experiments
+Comprehensive literature review on classical Friedel oscillations for theoretical foundation
 
 ## Tasks
 - Study Friedel's original 1952 paper and foundational concepts

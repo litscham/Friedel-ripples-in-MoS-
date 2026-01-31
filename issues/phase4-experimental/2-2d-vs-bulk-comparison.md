@@ -1,7 +1,7 @@
-# Comparison Study: 2D vs Bulk Systems
+# Comparison Study: Friedel Oscillations in 2D vs Bulk Systems
 
 ## Objective
-Systematically compare MoS₂ results with bulk systems
+Systematically compare MoS₂ results with bulk systems and assess STEM-EELS applicability
 
 ## Tasks
 - Collect Friedel oscillation data from bulk systems

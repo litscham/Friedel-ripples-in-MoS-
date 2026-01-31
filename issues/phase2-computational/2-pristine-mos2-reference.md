@@ -1,7 +1,7 @@
-# Computational: Pristine MoS₂ Reference System
+# Computational: Pristine MoS₂ Reference System (LDOS Baseline)
 
 ## Objective
-Calculate and validate defect-free monolayer MoS₂
+Calculate and validate defect-free monolayer MoS₂ electronic structure as baseline for STEM-EELS comparison
 
 ## Tasks
 - Construct 2D supercell for monolayer MoS₂

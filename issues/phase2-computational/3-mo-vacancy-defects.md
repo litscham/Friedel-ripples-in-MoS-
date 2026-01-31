@@ -1,7 +1,7 @@
-# Computational: Mo Vacancy Defects
+# Computational: Mo Vacancy Defects (LDOS Analysis)
 
 ## Objective
-Complete DFT study of Mo vacancies
+Complete DFT study of Mo vacancies with emphasis on LDOS mapping for STEM-EELS interpretation
 
 ## Tasks
 - Create supercells with Mo vacancies

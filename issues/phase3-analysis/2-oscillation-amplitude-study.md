@@ -1,7 +1,7 @@
-# Analysis: Oscillation Amplitude Study
+# Analysis: Oscillation Amplitude and Decay (STEM-EELS Detectability)
 
 ## Objective
-Characterize amplitude of Friedel ripples
+Characterize amplitude and spatial decay of Friedel ripples for STEM-EELS observability
 
 ## Tasks
 - Quantify LDOS oscillation amplitudes

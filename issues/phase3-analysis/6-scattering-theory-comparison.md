@@ -1,7 +1,7 @@
-# Analysis: Comparison with Scattering Theory
+# Analysis: Theory Validation - LDOS vs Scattering Theory Predictions
 
 ## Objective
-Validate DFT results against theoretical predictions
+Validate DFT-computed LDOS against quantum scattering theory predictions for theoretical foundation
 
 ## Tasks
 - Calculate expected oscillations from scattering theory
